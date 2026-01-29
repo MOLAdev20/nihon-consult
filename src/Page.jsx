@@ -37,6 +37,11 @@ const Page = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
+        // sort by date timestamp
+        data.data.sort((a, b) => {
+          return new Date(b["Timestamp"]) - new Date(a["Timestamp"]);
+        });
+
         setData(data.data);
         console.log(data);
       })

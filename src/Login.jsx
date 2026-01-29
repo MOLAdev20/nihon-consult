@@ -17,8 +17,8 @@ const Login = () => {
 
   const processClick = () => {
     if (
-      usernameRef.current.value === "admin" &&
-      passwordRef.current.value === "admin"
+      usernameRef.current.value === "nihonskuy" &&
+      passwordRef.current.value === "Nihonskuy2025"
     ) {
       localStorage.setItem("isLogin", true);
       navigate("/data");
